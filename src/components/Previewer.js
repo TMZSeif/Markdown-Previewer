@@ -6,7 +6,7 @@ function Previewer(props) {
   return (
     <div>
         <p id="preview-title">Markdown Previewer</p>
-        <Card>
+        <Card className="card" >
             <Card.Body>
                 <div id="preview">
                   <Markdown>{props.input}</Markdown>
