@@ -1,5 +1,10 @@
 #preview {
-    height: 85vh;
+    min-height: 85vh;
+    height: auto;
+}
+
+#preview img {
+    max-width: 100%;
 }
 
 #preview-title {

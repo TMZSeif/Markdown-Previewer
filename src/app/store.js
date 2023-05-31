@@ -9,7 +9,7 @@ const addInput = input => ({
 const inputReducer = (state='', action) => {
     switch(action.type) {
         case ADD:
-            return state+action.input;
+            return action.input;
         default:
             return state;
     }

@@ -6,12 +6,12 @@ import Editor from './components/Editor';
 import Previewer from './components/Previewer';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <Container>
       <Row>
-        <Col xs={6} ><Editor /></Col>
-        <Col xs={6} ><Previewer/></Col>
+        <Col xs={6} ><Editor input={props.input} addInput={props.addInput} /></Col>
+        <Col xs={6} ><Previewer input={props.input} /></Col>
       </Row>
     </Container>
   );
